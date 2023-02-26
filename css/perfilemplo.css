@@ -1,5 +1,6 @@
 body{
     background-color: #eebf8e;
+    background-attachment: fixed;
 }
 header img{
     position: relative;
@@ -73,21 +74,18 @@ p{
     background-color: green;
     transition: 0.5;
 }
-#Bienve{
-    position: relative;
-    left: 25rem;
-}
 #Usu{
     position: relative;
-    left: 18rem;
+    left: 45rem;
 }
 table{
+    position: relative;
     font-size: 18px;
     border-color: black;
     border-spacing: 0ch;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: 7rem;
+    left: 33rem;
 }
 th{
     padding: 2px;
@@ -98,12 +96,13 @@ td{
     background-color: cornflowerblue;
 }
 h1{
+    position: relative;
     width: 46rem;
     font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 15px;
+    left: 30rem;
     color: black;
-    margin-left: 30px;
     border: 10px;
     background-color: chartreuse;
 }
@@ -113,8 +112,9 @@ h1:hover{
     transition: .1s;
 }
 h3{
+    position: relative;
+    left: 41rem;
     font-size: 40px;
-    margin-left: 16rem;
     background-color: brown;
     width: 20rem;
     border-radius: 20px;
@@ -129,6 +129,7 @@ h3:hover{
 
 }
 footer{
+    width: 64.3rem;
     position: relative;
     background-color: #287034;
     left: 20rem;

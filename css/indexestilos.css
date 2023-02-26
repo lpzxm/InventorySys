@@ -1,37 +1,59 @@
 body{
-    background-color: #E1EEDD;
+    background-attachment: fixed;
+    
 }
 header img{
     position: relative;
     left: 21rem;
 }
 header{
-    background-color: #287034
-    ;
+    background-color: #287034;
 }
 .car{
-    background-color: darkgrey;
+    background-color: rgb(235, 143, 68);
     border-radius: 15px;
     width: 17rem;
     position:relative ;
-    left: 20rem;
+    top: 5rem;
+    left: 36rem;
+}
+.car:hover{
+    background-color: rgb(233, 186, 149);
+    color: black;
+    transition: .2s;
 }
 .carne {
     position: relative;
-    left: 38rem;
-    bottom: 5rem;
+    left: 55rem;
+    bottom: -0,1rem;
+}
+.tacarne{
+    position: relative;
+    left: 22rem;
+    font-size: 18px;
+    border-color: black;
+    border-spacing: 0ch;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+
 }
 .aba{
-    position: relative;
-    right: 2.5rem;
-    background-color: darkgrey;
+    background-color: rgb(230, 207, 82);
     border-radius: 15px;
-    width: 20rem;
+    width: 19rem;
+    position:relative ;
+    top: 5rem;
+    left: 36rem;
+}
+.aba:hover{
+    background-color:  rgb(226, 213, 138); 
+    color: black;
+    transition: .2s;
 }
 .abaro{
     position: relative;
-    left: 20rem;
-    bottom: 4rem;
+    left: 55rem;
+    bottom: -0,1rem;
 }
 table{
     font-size: 18px;
@@ -42,12 +64,12 @@ table{
 }
 .taaba{
     position: relative;
-    right: 21rem;
+    left: 22rem;
     font-size: 18px;
     border-color: black;
     border-spacing: 0ch;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:Arial, Helvetica, sans-serif;
 }
 th{
     padding: 2px;
@@ -59,75 +81,92 @@ td{
 }
 .tagri{
     position: relative;
-    right: 21rem;
+    left: 22rem;
     font-size: 18px;
     border-color: black;
     border-spacing: 0ch;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:Arial, Helvetica, sans-serif;
 }
 .agri{
-    position: relative;
-    background-color: darkgrey;
+    background-color: rgb(82, 184, 62);
     border-radius: 15px;
-    width: 28rem;
-    right: 8rem;
+    width: 26.5rem;
+    position:relative ;
+    top: 5rem;
+    left: 32rem;
+}
+.agri:hover{
+    background-color: rgb(127, 172, 118);
+    color: black;
+    transition: .2s;
 }
 .agrimg{
     position: relative;
-    left: 22rem;
-    bottom: 5rem;
+    left: 60rem;
+    bottom: -0,1rem;
 }
 .lim{
-    position: relative;
-    background-color: darkgrey;
+    background-color: rgb(127, 171, 253);
     border-radius: 15px;
-    right: 10rem;
-    width: 28rem;
-    top: 2.5rem;
+    width: 29rem;
+    position:relative ;
+    top: 5rem;
+    left: 32rem;
+}
+.lim:hover{
+    background-color: rgb(179, 199, 230);
+    color: black;
+    transition: .2s;
 }
 .limimg{
     position: relative;
-    left: 22rem;
-    bottom: 30px;
+    left: 62rem;
+    bottom: -0,1rem;
 }
 .talim{
     position: relative;
-    right: 21rem;
+    left: 22rem;
     font-size: 18px;
     border-color: black;
     border-spacing: 0ch;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:Arial, Helvetica, sans-serif;
 }
 .limp{
-    position: relative;
-    background-color: darkgrey;
+    background-color: rgb(46, 220, 243);
     border-radius: 15px;
-    right: 10rem;
-    width: 28rem;
-    top: 2.5rem;
+    width: 25rem;
+    position: relative ;
+    top: 5rem;
+    left: 34rem;
+}
+.limp:hover{
+    background-color: rgb(131, 224, 236);
+    color: black;
+    transition: .2s;
 }
 .limpimg{
     position: relative;
-    left: 22rem;
-    bottom: 30px;
+    left: 60rem;
+    bottom: -0,1rem;
 }
 .talimp{
     position: relative;
-    right: 21rem;
+    left: 22rem;
     font-size: 18px;
     border-color: black;
     border-spacing: 0ch;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:Arial, Helvetica, sans-serif;
 }
 #footer{
     color: black;
 
 }
 footer{
+    width: 64.3rem;
     position: relative;
     background-color: #287034;
-    right: 17px;
+    left: 20rem;
 }

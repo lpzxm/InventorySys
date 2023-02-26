@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/indexestilos.css">
     <link rel="stylesheet" href="../CSS/Menúlateral.css">
-    <link rel="icon" href="../Multimedia-imagenes/Imagenes/hola.png">
+    <link rel="icon" href="../Multimedia-imagenes/Imagenes-Empleado/hola.png">
     <title>Index empleado</title>
 </head>
-<body>
+<body background="../Multimedia-imagenes/Imagenes-Empleado/fondo.avif">
     <header>
-        <img src="../Imagenes/Imagenes-Empleado/holax2.png" alt="">
+        <img src="../Multimedia-imagenes/Imagenes-Empleado/holax2.png" alt="">
         <hr>
     </header>
     <!--Buscador-->
@@ -21,7 +21,7 @@
  <!--Menú lateral-->
     <section class="container">
         <div class="fondo">
-        <img src="../Imagenes/Imagenes-Empleado/hola.png" alt="logo" width="100">
+        <img src="../Multimedia-imagenes/Imagenes-Empleado/hola.png" alt="logo" width="100">
         <br>
         <ul>
             <li><a href="../HTML/Pefilemplo.html">Perfil</a></li>
@@ -39,15 +39,16 @@
     </div>
     </section>
 <!--Cuerpo del trabajo-->
-<div class="conteprin">
+<div id="contcarne">
 <h1 class="car">Categoria: Carnes</h1>
-<img class="carne" src="../Imagenes/Imagenes-Empleado/Carne.png" alt="Carnes" width="100" height="100">
+<img class="carne" src="../Multimedia-imagenes/Imagenes-Empleado/Carne.png" alt="Carnes" width="100" height="100">
 <!--Carnes-->
     <table class="tacarne" border="1">
         <tr>
         <th>Nombre de producto</th>
         <th>Cantidad</th>
         <th>Precio</th>
+        <th>Cod.</th>
         <th>Empresa que la distrubuye</th>
         <th>Existencia</th>
         </tr>
@@ -55,6 +56,7 @@
             <td>Pollo</td>
             <td>50 unidades</td>
             <td>$3.40 lb</td>
+            <td>000000</td>
             <td>Distribuidor</td>
             <td><input type="button" value="Reportar la inexistencia de producto"></td>
 
@@ -63,6 +65,7 @@
             <td>Carne molida</td>
             <td>30 unidades</td>
             <td>$2.50 lb</td>
+            <td>000000</td>
             <td>Distribuidora</td>
             <td><input type="button" value="Reportar la inexistencia de producto"></td>
         </tr>
@@ -70,6 +73,7 @@
             <td>Costilla de cerdo</td>
             <td>40 unidades</td>
             <td>$4.25 lb</td>
+            <td>000000</td>
             <td>Distribuidora</td>
             <td><input type="button" value="Reportar la inexistencia de producto"></td>
         </tr>
@@ -77,6 +81,7 @@
             <td>Salón de res</td>
             <td>20 unidades</td>
             <td>$3.35 lb</td>
+            <td>000000</td>
             <td>Distribuidora</td>
             <td><input type="button" value="Reportar la inexistencia de producto"></td>
         </tr>
@@ -84,19 +89,21 @@
             <td>Pescado lonja</td>
             <td>50 unidades</td>
             <td>$2.30 lb</td>
+            <td>000000</td>
             <td>Distribuidora</td>
             <td><input type="button" value="Reportar la inexistencia de producto"></td>
         </tr>
     </table>
-    <div class="conteprin">
+</div>
         <h1 class="aba">Categoria: Abarrotes</h1>
-        <img class="abaro" src="../Imagenes/Imagenes-Empleado/abarrotes.png" alt="Abarrotes" width="100" height="100">
+        <img class="abaro" src="../Multimedia-imagenes/Imagenes-Empleado/abarrotes.png" alt="Abarrotes" width="100" height="100">
         <!--Abarrotes-->
         <table class="taaba" border="1">
             <tr>
             <th>Nombre de producto</th>
             <th>Cantidad</th>
             <th>Precio</th>
+            <th>Cod.</th>
             <th>Empresa que la distrubuye</th>
             <th>Existencia</th>
             </tr>
@@ -104,6 +111,7 @@
                 <td>Avena</td>
                 <td>35 unidades</td>
                 <td>$4.00</td>
+                <td>000000</td>
                 <td>Distribuidor</td>
                 <td><input type="button" value="Reportar la inexistencia de producto"></td>
     
@@ -112,6 +120,7 @@
                 <td>Harina</td>
                 <td>30 unidades</td>
                 <td>$4.50 </td>
+                <td>000000</td>
                 <td>Distribuidora</td>
                 <td><input type="button" value="Reportar la inexistencia de producto"></td>
             </tr>
@@ -119,6 +128,7 @@
                 <td>Cereal</td>
                 <td>20 unidades</td>
                 <td>$4.75 </td>
+                <td>000000</td>
                 <td>Distribuidora</td>
                 <td><input type="button" value="Reportar la inexistencia de producto"></td>
             </tr>
@@ -126,6 +136,7 @@
                 <td>Consomé</td>
                 <td>60 unidades</td>
                 <td>$1.40</td>
+                <td>000000</td>
                 <td>Distribuidora</td>
                 <td><input type="button" value="Reportar la inexistencia de producto"></td>
             </tr>
@@ -133,6 +144,7 @@
                 <td>Aceite</td>
                 <td>40 unidades</td>
                 <td>$3.30</td>
+                <td>000000</td>
                 <td>Distribuidora</td>
                 <td><input type="button" value="Reportar la inexistencia de producto"></td>
             </tr>
@@ -141,13 +153,14 @@
         <br>
         <br>
             <h1 class="agri">Categoria: Productos agricolas</h1>
-            <img class="agrimg" src="../Imagenes/Imagenes-Empleado/productos agri.png" alt="Productos agricolas" width="100" height="100">
+            <img class="agrimg" src="../Multimedia-imagenes/Imagenes-Empleado/productos agri.png" alt="Productos agricolas" width="100" height="100">
             <!--Productos de agricolas-->
             <table class="tagri" border="1">
                 <tr>
                 <th>Nombre de producto</th>
                 <th>Cantidad</th>
                 <th>Precio</th>
+                <th>Cod.</th>
                 <th>Empresa que la distrubuye</th>
                 <th>Existencia</th>
                 </tr>
@@ -155,6 +168,7 @@
                     <td>Guineos</td>
                     <td>45 unidades</td>
                     <td>$2.00 lb</td>
+                    <td>000000</td>
                     <td>Distribuidor</td>
                     <td><input type="button" value="Reportar la inexistencia de producto"></td>
         
@@ -163,6 +177,7 @@
                     <td>Tomates</td>
                     <td>23 unidades</td>
                     <td>$3.50 lb</td>
+                    <td>000000</td>
                     <td>Distribuidora</td>
                     <td><input type="button" value="Reportar la inexistencia de producto"></td>
                 </tr>
@@ -170,6 +185,7 @@
                     <td>Pepino</td>
                     <td>42 unidades</td>
                     <td>$2.99 lb</td>
+                    <td>000000</td>
                     <td>Distribuidora</td>
                     <td><input type="button" value="Reportar la inexistencia de producto"></td>
                 </tr>
@@ -177,6 +193,7 @@
                     <td>Manzana</td>
                     <td>82 unidades</td>
                     <td>$3.20 lb</td>
+                    <td>000000</td>
                     <td>Distribuidora</td>
                     <td><input type="button" value="Reportar la inexistencia de producto"></td>
                 </tr>
@@ -184,19 +201,21 @@
                     <td>Lechuga</td>
                     <td>60 unidades</td>
                     <td>$2.40 lb</td>
+                    <td>000000</td>
                     <td>Distribuidora</td>
                     <td><input type="button" value="Reportar la inexistencia de producto"></td>
                 </tr>
             </table>
             <br>
             <h1 class="lim">Categoria: Productos de impieza</h1>
-            <img class="limimg" src="../Imagenes/Imagenes-Empleado/Limpieza.png" alt="Productos agricolas" width="100" height="100">
+            <img class="limimg" src="../Multimedia-imagenes/Imagenes-Empleado/Limpieza.png" alt="Productos agricolas" width="100" height="100">
             <!--Productos de limpieza-->
             <table class="talim" border="1">
                 <tr>
                 <th>Nombre de producto</th>
                 <th>Cantidad</th>
                 <th>Precio</th>
+                <th>Cod.</th>
                 <th>Empresa que la distrubuye</th>
                 <th>Existencia</th>
                 </tr>
@@ -204,6 +223,7 @@
                     <td>Detergente</td>
                     <td>35 unidades</td>
                     <td>$4.00 </td>
+                    <td>000000</td>
                     <td>Distribuidor</td>
                     <td><input type="button" value="Reportar la inexistencia de producto"></td>
         
@@ -212,6 +232,7 @@
                     <td>Desinfectante</td>
                     <td>21 unidades</td>
                     <td>$2.50</td>
+                    <td>000000</td>
                     <td>Distribuidora</td>
                     <td><input type="button" value="Reportar la inexistencia de producto"></td>
                 </tr>
@@ -219,6 +240,7 @@
                     <td>Escoba</td>
                     <td>41 unidades</td>
                     <td>$3.90 </td>
+                    <td>000000</td>
                     <td>Distribuidora</td>
                     <td><input type="button" value="Reportar la inexistencia de producto"></td>
                 </tr>
@@ -226,6 +248,7 @@
                     <td>Legía</td>
                     <td>30 unidades</td>
                     <td>$3.99 </td>
+                    <td>000000</td>
                     <td>Distribuidora</td>
                     <td><input type="button" value="Reportar la inexistencia de producto"></td>
                 </tr>
@@ -233,19 +256,21 @@
                     <td>Limpia vidrios</td>
                     <td>24 unidades</td>
                     <td>$3.60 </td>
+                    <td>000000</td>
                     <td>Distribuidora</td>
                     <td><input type="button" value="Reportar la inexistencia de producto"></td>
                 </tr>
             </table>
             <br>
             <h1 class="limp">Categoria: Cuidado personal</h1>
-            <img class="limpimg" src="../Imagenes/Imagenes-Empleado/Cuidadopersonal.png" alt="Productos agricolas" width="100" height="100">
+            <img class="limpimg" src="../Multimedia-imagenes/Imagenes-Empleado/Cuidadopersonal.png" alt="Productos agricolas" width="100" height="100">
             <!--Productos de limpieza personal-->
             <table class="talimp" border="1">
                 <tr>
                 <th>Nombre de producto</th>
                 <th>Cantidad</th>
                 <th>Precio</th>
+                <th>Cod.</th>
                 <th>Empresa que la distrubuye</th>
                 <th>Existencia</th>
                 </tr>
@@ -253,6 +278,7 @@
                     <td>Peine fino</td>
                     <td>15 unidades</td>
                     <td>$3.00 </td>
+                    <td>000000</td>
                     <td>Distribuidor</td>
                     <td><input type="button" value="Reportar la inexistencia de producto"></td>
         
@@ -261,6 +287,7 @@
                     <td>Pasta dental</td>
                     <td>21 unidades</td>
                     <td>$2.20</td>
+                    <td>000000</td>
                     <td>Distribuidora</td>
                     <td><input type="button" value="Reportar la inexistencia de producto"></td>
                 </tr>
@@ -268,6 +295,7 @@
                     <td>Cepillo de dientes</td>
                     <td>24 unidades</td>
                     <td>$1.55>
+                    <td>000000</td>
                     <td>Distribuidora</td>
                     <td><input type="button" value="Reportar la inexistencia de producto"></td>
                 </tr>
@@ -275,6 +303,7 @@
                     <td>Jabón de baño</td>
                     <td>42 unidades</td>
                     <td>$2.30 lb</td>
+                    <td>000000</td>
                     <td>Distribuidora</td>
                     <td><input type="button" value="Reportar la inexistencia de producto"></td>
                 </tr>
@@ -282,19 +311,21 @@
                     <td>Shampoo</td>
                     <td>13 unidades</td>
                     <td>$4.40</td>
+                    <td>000000</td>
                     <td>Distribuidora</td>
                     <td><input type="button" value="Reportar la inexistencia de producto"></td>
                 </tr>
             </table>
             <br>
             <br>
-</div>
-<br>
-<br>
+            <br>
+            <br>
     <footer>
+        <hr>
         <p id="footer">Derechos reservado (2023)</p>
         <br>
         <br>
     </footer>
+
 </body>
 </html>
