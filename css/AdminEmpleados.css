@@ -1,0 +1,42 @@
+header img{
+    position: relative;
+    left: 21rem;
+}
+header{
+    background-color: #287034
+    ;
+}
+
+table{
+    font-size: 18px;
+    border-color: black;
+    border-spacing: 0ch;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.employeecontainer{
+    position: relative;
+    left: 25%;
+    margin-top: 10vh;
+    margin-left: 5vh;
+}
+
+.taaba{
+    position: relative;
+    right: 21rem;
+    font-size: 18px;
+    border-color: black;
+    border-spacing: 0ch;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+th{
+    padding: 2px;
+    background-color: rgb(223, 106, 106);
+}
+td{
+    padding: 2px;
+    background-color: cornflowerblue;
+}

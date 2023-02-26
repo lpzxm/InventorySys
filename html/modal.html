@@ -4,9 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/modalStyle.css">
+    <title>Ejemplo modal</title>
 </head>
 <body>
+    <h2>Ejemplo de modal de confirmacion</h2>
+
+    <button id="myBtn">Abrir modal</button>
+    
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+    
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Encabezado del modal</h2>
+        </div>
+        <div class="modal-body">
+          <p>Hola</p>
+        </div>
+        <div class="modal-footer">
+          <h3>Adrian Lopez</h3>
+          <button type="submit">Confirmar?</button>
+        </div>
+      </div>
+    
+    </div>
+    
+<script>
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("myBtn");
+    var span = document.getElementsByClassName("close")[0];
+    
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+</script>
     
 </body>
 </html>
