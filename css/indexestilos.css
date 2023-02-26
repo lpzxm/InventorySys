@@ -1,0 +1,133 @@
+body{
+    background-color: #E1EEDD;
+}
+header img{
+    position: relative;
+    left: 21rem;
+}
+header{
+    background-color: #287034
+    ;
+}
+.car{
+    background-color: darkgrey;
+    border-radius: 15px;
+    width: 17rem;
+    position:relative ;
+    left: 20rem;
+}
+.carne {
+    position: relative;
+    left: 38rem;
+    bottom: 5rem;
+}
+.aba{
+    position: relative;
+    right: 2.5rem;
+    background-color: darkgrey;
+    border-radius: 15px;
+    width: 20rem;
+}
+.abaro{
+    position: relative;
+    left: 20rem;
+    bottom: 4rem;
+}
+table{
+    font-size: 18px;
+    border-color: black;
+    border-spacing: 0ch;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.taaba{
+    position: relative;
+    right: 21rem;
+    font-size: 18px;
+    border-color: black;
+    border-spacing: 0ch;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+th{
+    padding: 2px;
+    background-color: rgb(223, 106, 106);
+}
+td{
+    padding: 2px;
+    background-color: cornflowerblue;
+}
+.tagri{
+    position: relative;
+    right: 21rem;
+    font-size: 18px;
+    border-color: black;
+    border-spacing: 0ch;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.agri{
+    position: relative;
+    background-color: darkgrey;
+    border-radius: 15px;
+    width: 28rem;
+    right: 8rem;
+}
+.agrimg{
+    position: relative;
+    left: 22rem;
+    bottom: 5rem;
+}
+.lim{
+    position: relative;
+    background-color: darkgrey;
+    border-radius: 15px;
+    right: 10rem;
+    width: 28rem;
+    top: 2.5rem;
+}
+.limimg{
+    position: relative;
+    left: 22rem;
+    bottom: 30px;
+}
+.talim{
+    position: relative;
+    right: 21rem;
+    font-size: 18px;
+    border-color: black;
+    border-spacing: 0ch;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.limp{
+    position: relative;
+    background-color: darkgrey;
+    border-radius: 15px;
+    right: 10rem;
+    width: 28rem;
+    top: 2.5rem;
+}
+.limpimg{
+    position: relative;
+    left: 22rem;
+    bottom: 30px;
+}
+.talimp{
+    position: relative;
+    right: 21rem;
+    font-size: 18px;
+    border-color: black;
+    border-spacing: 0ch;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+#footer{
+    color: black;
+
+}
+footer{
+    position: relative;
+    background-color: #287034;
+    right: 17px;
+}

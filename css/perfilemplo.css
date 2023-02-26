@@ -1,0 +1,136 @@
+body{
+    background-color: #eebf8e;
+}
+header img{
+    position: relative;
+    left: 21rem;
+}
+header{
+    background-color: #287034
+    ;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+}
+.fondo {
+    width: 320px;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    float: left;
+
+}
+.fondo img {
+width: 100px;
+display: block;
+margin-top: 15px;
+margin-left: 6.4rem;
+opacity: 0.7;
+}
+.fondo ul li{
+    list-style: none;
+    padding: 12px 10px;
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+p{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+p:hover{
+        background-color: rgb(161, 161, 161);
+    transition: 0.5;
+}
+.fondo ul li:hover{
+    background-color: rgb(161, 161, 161);
+    transition: 0.5;
+}
+p{
+    color: white;
+}
+#cerrar {
+    border: 5px;
+    font-size: 25px;
+    background-color: greenyellow;
+    margin-left: 4.5rem;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    height: 45px;
+    width: 10rem;
+}
+#cerrar:hover{
+    background-color: green;
+    transition: 0.5;
+}
+#Bienve{
+    position: relative;
+    left: 25rem;
+}
+#Usu{
+    position: relative;
+    left: 18rem;
+}
+table{
+    font-size: 18px;
+    border-color: black;
+    border-spacing: 0ch;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 7rem;
+}
+th{
+    padding: 2px;
+    background-color: rgb(223, 106, 106);
+}
+td{
+    padding: 2px;
+    background-color: cornflowerblue;
+}
+h1{
+    width: 46rem;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+    color: black;
+    margin-left: 30px;
+    border: 10px;
+    background-color: chartreuse;
+}
+h1:hover{
+    background-color: #287034;
+    color: aliceblue;
+    transition: .1s;
+}
+h3{
+    font-size: 40px;
+    margin-left: 16rem;
+    background-color: brown;
+    width: 20rem;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h3:hover{
+    color: white;
+    transition: .1s;
+}
+#footer{
+    color: black;
+
+}
+footer{
+    position: relative;
+    background-color: #287034;
+    left: 20rem;
+}
+
