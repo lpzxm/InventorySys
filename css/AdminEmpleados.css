@@ -2,6 +2,7 @@ header img{
     position: relative;
     left: 21rem;
 }
+
 header{
     background-color: #287034;
 }
@@ -19,21 +20,22 @@ table{
     font-family: 'Courier New', Courier, monospace;
 }
 
-.employeecontainer{
+/* .employeecontainer{
     position: relative;
     left: 30%;
     margin-top: 10vh;
     margin-left: 5vh;
-}
+} */
 
-.taaba{
+.tacarne{
     position: relative;
-    right: 21rem;
+    left: 19rem;
     font-size: 18px;
     border-color: black;
     border-spacing: 0ch;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:Arial, Helvetica, sans-serif;
+
 }
 
 th{
