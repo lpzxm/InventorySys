@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/registrostyle.css">
+    <link rel="shortcut icon" href="../imagenes/hola.png" type="image/x-icon">
+    <title>Registrate</title>
+  </head>
+  <body>
+
+    <div class="login-box">
+      <img src="../imagenes/hola.png" class="avatar" alt="Avatar Image">
+      <h1 id="TitleA">¡Registra el producto aqui!</h1>
+      <form action="../html/InicioSesion.html">
+        <label for="username" id="TitleB">Nombre de la empresa:</label>
+        <input type="text" name="nameholder" placeholder="Ingrese el nombre de la empresa">
+        <label for="username" id="TitleF">Nombre del proveedor:</label>
+        <input type="text"  name="codigoholder" placeholder="Ingresa el nombre del proveedor">
+        <label for="username" id="TitleJ">Producto que provee:</label>
+        <input type="text"  name="validaholder" placeholder="Ingrese el producto que provee">
+        <label for="descripcion" id="pastel1"> Descripcion del producto:</label>
+        <input type="text"  id="pastel2" placeholder="Ingrese la descripcion del producto">
+        
+       <label for="">Cantidad del producto:</label>
+        <input type="text"placeholder="Ingrese la cantidad de producto a ingresar.">
+        <label for="">Codigo de producto:</label>
+        <input type="text"placeholder="Ingrese el codigo del producto">
+      <!----Apartado de opciones---------->
+        <select id="papas1">
+          <option value="value1">Carnes</option>
+          <option value="value2" selected>Abarrotes</option>
+          <option value="value3">Productos de limpieza</option>
+          <option value="value4">Cuidado personal</option>
+          <option value="value5">Productos agricolas</option>
+        </select>
+        
+        <label for="quantity">Cantidad (Minimo 1- Maximo 100):</label>
+        
+        <input type="number" id="queso1" name="quantity" min="1" max="100">
+
+        <label for="precio">Precio total del producto:</label>
+        <input type="text"placeholder="Ingrese el precio total de los productos adquiridos">
+        <input type="submit" value="Registrar" id="TitleL">
+      </form>
+    </div>
+
+  </body>
+  
+</html>
