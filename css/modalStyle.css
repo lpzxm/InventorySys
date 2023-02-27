@@ -17,6 +17,7 @@
 }
 
 .modal-content {
+  text-align: center;
   position: relative;
   background-color: #fefefe;
   margin: auto;
@@ -28,6 +29,10 @@
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
   animation-duration: 0.4s;
+}
+
+.modal-comment{
+  color: black;
 }
 
 @-webkit-keyframes animatetop {

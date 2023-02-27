@@ -10,7 +10,7 @@
     bottom: 0px;
 }
 .fondo {
-    width: 320px;
+    width: 300px;
     height: 100%;
     background: rgb(0, 0, 0);
     float: left;
@@ -66,7 +66,7 @@ p{
     border: 5px;
     font-size: 25px;
     background-color: greenyellow;
-    margin-left: 4.5rem;
+    margin-left: 4rem;
     margin-bottom: 20px;
     border-radius: 20px;
     height: 45px;
@@ -78,8 +78,9 @@ p{
 }
 input{
     font-size: 17.2px;
-    background-color: aquamarine;
+    padding: 5px;
+    background-color: rgb(158, 158, 158);
 }
 input:hover{
-    background-color: aqua;
+    background-color: rgb(120, 151, 252);
 }

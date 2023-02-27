@@ -25,9 +25,6 @@
             <li><a href="../HTML/Pefilemplo.html">Reporte</a></li>
             <li><a href="#">Productos</a></li>
             <br>
-            <br>
-            <br>
-            <br>
             <input id="cerrar" type="button" value="Cerrar sesión"/>
             <br>
             <hr>
@@ -38,6 +35,16 @@
     </div>
     </section>
 
+        <!--Buscador-->
+        <br>
+        <div class="buscador">
+            <input  type="text" placeholder="Buscar" required>
+        </div>
+        
+    <div class="btnAddEmpleado">
+      <button>Agregar empleado <img src="../Imagenes/Imagenes-Empleado/empleado-contratar.png" width="50px" alt=""></button>
+    </div>
+
     <!-- modal -->
     <!-- Modal -->
     <div id="myModal" class="modal">
@@ -45,10 +52,10 @@
         <div class="modal-content">
           <div class="modal-header">
             <span class="close">&times;</span>
-            <h2>Encabezado del modal</h2>
+            <h2>Eliminar empleado</h2>
           </div>
           <div class="modal-body">
-            <p>Hola</p>
+            <p class="modal-comment">¿Desea eliminar del sistema al empleado previamente seleccionado?</p>
           </div>
           <div class="modal-footer">
             <h3>Adrian Lopez</h3>
@@ -73,7 +80,7 @@
                 <td>Lorem, ipsum.</td>
                 <td>Lorem, ipsum.</td>
                 <td>Lorem, ipsum.</td>
-                <td><input type="button" id="myBtn" value="Eliminar empleado"></td>
+                <td><input type="button" id="myBtn" value="Eliminar empleado" onclick="eliminarEmpleadoModal()"></td>
     
             </tr>
             <tr>
@@ -81,28 +88,28 @@
                 <td>3Lorem, ipsum.</td>
                 <td>Lorem, ipsum.</td>
                 <td>Lorem, ipsum.</td>
-                <td><input type="button" id="myBtn" value="Eliminar empleado"></td>
+                <td><input type="button" id="myBtn" value="Eliminar empleado" onclick="eliminarEmpleadoModal()"></td>
             </tr>
             <tr>
                 <td>Lorem, ipsum.</td>
                 <td>4Lorem, ipsum.</td>
                 <td>Lorem, ipsum.</td>
                 <td>Lorem, ipsum.</td>
-                <td><input type="button" id="myBtn" value="Eliminar empleado"></td>
+                <td><input type="button" id="myBtn" value="Eliminar empleado" onclick="eliminarEmpleadoModal()"></td>
             </tr>
             <tr>
                 <td>SLorem, ipsum.</td>
                 <td>2Lorem, ipsum.</td>
                 <td>$Lorem, ipsum.</td>
                 <td>DLorem, ipsum.</td>
-                <td><input type="button" id="myBtn" value="Eliminar empleado"></td>
+                <td><input type="button" id="myBtn" value="Eliminar empleado" onclick="eliminarEmpleadoModal()"></td>
             </tr>
             <tr>
                 <td>Lorem, ipsum.</td>
                 <td>Lorem, ipsum.</td>
                 <td>Lorem, ipsum.</td>
                 <td>Lorem, ipsum.</td>
-                <td><input type="button" id="myBtn" value="Eliminar empleado"></td>
+                <td><input type="button" id="myBtn" value="Eliminar empleado" onclick="eliminarEmpleadoModal()"></td>
             </tr>
         </table>
     </div>
@@ -133,24 +140,27 @@
         
             setTimeout("mueveReloj()",1000)
         }
-
-    var modal = document.getElementById("myModal");
-    var btn = document.getElementById("myBtn");
-    var span = document.getElementsByClassName("close")[0];
+        function eliminarEmpleadoModal(){
+          var modal = document.getElementById("myModal");
+          var btn = document.getElementById("myBtn");
+          var span = document.getElementsByClassName("close")[0];
     
-    btn.onclick = function() {
-      modal.style.display = "block";
-    }
+          btn.onclick = function() {
+            modal.style.display = "block";
+            console.log("hola")
+          }
     
-    span.onclick = function() {
-      modal.style.display = "none";
-    }
+          span.onclick = function() {
+            modal.style.display = "none";
+          }
 
-    window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
+          window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          }     
+        }
+    
         </script>
 </body>
 </html>

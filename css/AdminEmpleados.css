@@ -3,10 +3,14 @@ header img{
     left: 21rem;
 }
 header{
-    background-color: #287034
-    ;
+    background-color: #287034;
 }
 
+
+.btnAddEmpleado{
+    display: flex;
+    justify-content: right;
+}
 table{
     font-size: 18px;
     border-color: black;
@@ -17,7 +21,7 @@ table{
 
 .employeecontainer{
     position: relative;
-    left: 25%;
+    left: 30%;
     margin-top: 10vh;
     margin-left: 5vh;
 }
