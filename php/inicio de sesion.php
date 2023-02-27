@@ -1,3 +1,40 @@
+<?php
+session_start(); 
+
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+	
+	$username = $_POST['username'];
+	$password = $_POST['password'];
+
+	
+	$servername = "localhost";
+	$username_db = "ID_db";
+	$password_db = "Pin_db";
+	$dbname = "minisúper";
+	$conn = mysqli_connect($servername, $username_db, $password_db, $dbname);
+
+	if (!$conn) {
+		die("La conexión a la base de datos ha fallado: " . mysqli_connect_error());
+	}
+
+	$sql = "SELECT * FROM usuarios WHERE username='$username' AND password='$password'";
+	$resultado = mysqli_query($conn, $sql);
+
+	
+	if (mysqli_num_rows($resultado) > 0) {
+
+		$_SESSION['username'] = $username;
+		header("Location: bienvenida.php");
+		exit();
+	} else {
+		
+		echo "Nombre de usuario o contraseña incorrectos.";
+	}
+
+	mysqli_close($conn);
+}
+?>
 <!DOCTYPE html>
   <head>
     <meta charset="utf-8">
