@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/modalStyle.css">
     <title>Admin Empleados</title>
 </head>
-<body onload="mueveReloj()">
+<body onload="mueveReloj()" background="../Imagenes/fondoadmin.jpeg">
     <header>
         <img src="../Imagenes/Imagenes-Empleado/holax2.png" alt="">
         <hr>
@@ -42,7 +42,7 @@
         </div>
         
     <div class="btnAddEmpleado">
-      <button> <a href="../html/registro de empleado.html"> Agregar empleado <img src="../Imagenes/Imagenes-Empleado/empleado-contratar.png" width="50px" alt=""></a></button>
+      <button id="botoemple"> <a id="emple" href="../html/registro de empleado.html"> Agregar empleado <img id="empleimg" src="../Imagenes/Imagenes-Empleado/empleado-contratar.png" width="50px" alt=""></a></button>
     </div>
 
     <!-- modal -->
@@ -68,20 +68,20 @@
     <!-- Tabla con empleados -->
     <!--Carnes-->
     <div class="employeecontainer">
-        <table class="tacarne" border="1">
+        <table class="tablaemplo" border="1">
             <tr>
             <th>Nombre completo</th>
             <th>DUI</th>
             <th>ID</th>
             <th>Fecha de registro</th>
-            <th>Existencia</th>
+            <th>Eliminar empleado</th>
             </tr>
             <tr>
                 <td>Lorem, ipsum.</td>
                 <td>Lorem, ipsum.</td>
                 <td>Lorem, ipsum.</td>
                 <td>Lorem, ipsum.</td>
-                <td><input type="button" id="myBtn" value="Eliminar empleado" onclick="eliminarEmpleadoModal()"></td>
+                <td><button><img src="../Imagenes/Eliminar.webp" width="20px"id="myBtn" onclick="eliminarEmpleadoModal()"></button></td>
     
             </tr>
             <tr>
@@ -89,28 +89,28 @@
                 <td>3Lorem, ipsum.</td>
                 <td>Lorem, ipsum.</td>
                 <td>Lorem, ipsum.</td>
-                <td><input type="button" id="myBtn" value="Eliminar empleado" onclick="eliminarEmpleadoModal()"></td>
+                <td><button><img src="../Imagenes/Eliminar.webp" width="20px"id="myBtn" onclick="eliminarEmpleadoModal()"></button></td>
             </tr>
             <tr>
                 <td>Lorem, ipsum.</td>
                 <td>4Lorem, ipsum.</td>
                 <td>Lorem, ipsum.</td>
                 <td>Lorem, ipsum.</td>
-                <td><input type="button" id="myBtn" value="Eliminar empleado" onclick="eliminarEmpleadoModal()"></td>
+                <td><button><img src="../Imagenes/Eliminar.webp" width="20px"id="myBtn" onclick="eliminarEmpleadoModal()"></button></td>
             </tr>
             <tr>
                 <td>SLorem, ipsum.</td>
                 <td>2Lorem, ipsum.</td>
                 <td>$Lorem, ipsum.</td>
                 <td>DLorem, ipsum.</td>
-                <td><input type="button" id="myBtn" value="Eliminar empleado" onclick="eliminarEmpleadoModal()"></td>
+                <td><button><img src="../Imagenes/Eliminar.webp" width="20px"id="myBtn" onclick="eliminarEmpleadoModal()"></button></td>
             </tr>
             <tr>
                 <td>Lorem, ipsum.</td>
                 <td>Lorem, ipsum.</td>
                 <td>Lorem, ipsum.</td>
                 <td>Lorem, ipsum.</td>
-                <td><input type="button" id="myBtn" value="Eliminar empleado" onclick="eliminarEmpleadoModal()"></td>
+                <td><button><img src="../Imagenes/Eliminar.webp" width="20px"id="myBtn" onclick="eliminarEmpleadoModal()"></button></td>
             </tr>
         </table>
     </div>
