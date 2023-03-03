@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-attachment: fixed;
+    background-color: black;
+
+}
+header img{
+    position: relative;
+    left: 21rem;
+}
+header{
+    background-color: #287034;
+}
+.car{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(192, 192, 192);
+    border-radius: 15px;
+    width: 18.4rem;
+    position: relative ;
+    box-shadow: 0 0 10px rgb(153, 153, 153), 0 0 40px;
+    top: 5rem;
+    padding: 5px;
+    left: 38rem;
+}
+.car:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    transition: .2s;
+}
+.carne {
+    position: relative;
+    left: 57rem;
+    bottom: -0,1rem;
+}
+.tacarne{
+    position: relative;
+    left: 19rem;
+    font-size: 18px;
+    border-color: black;
+    border-spacing: 0ch;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+.aba{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(192, 192, 192);
+    border-radius: 15px;
+    width: 21rem;
+    position:relative ;
+    box-shadow: 0 0 10px rgb(153, 153, 153), 0 0 40px;
+    top: 5rem;
+    padding: 5px;
+    left: 36rem;
+}
+.aba:hover{
+    background-color: rgb(179, 199, 230);
+    color: black;
+    transition: .2s;
+}
+.abaro{
+    position: relative;
+    left: 58rem;
+    bottom: 1rem;
+}
+table{
+    font-size: 18px;
+    border-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px plum, 0 0 40px;
+    border-spacing: 0ch;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.taaba{
+    position: relative;
+    left: 19rem;
+    font-size: 18px;
+    border-color: black;
+    border-spacing: 0ch;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+th{
+    color: rgb(187, 179, 184);
+    padding: 1px;
+    background-color: rgb(85, 85, 85);
+}
+td{
+    padding: 8px;
+    color: white;
+    background-color: rgb(51, 51, 51);
+}
+.tagri{
+    position: relative;
+    left: 19rem;
+    font-size: 18px;
+    border-color: black;
+    border-spacing: 0ch;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.agri{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(192, 192, 192);
+    border-radius: 15px;
+    width: 30.5rem;
+    position:relative ;
+    box-shadow: 0 0 10px rgb(153, 153, 153), 0 0 40px;
+    top: 5rem;
+    padding: 5px;
+    left: 30rem;
+}
+.agri:hover{
+    background-color: rgb(179, 199, 230);
+    color: black;
+    transition: .2s;
+}
+.agrimg{
+    position: relative;
+    left: 62rem;
+    bottom: 1rem;
+}
+.lim{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(192, 192, 192);
+    border-radius: 15px;
+    width: 32rem;
+    position:relative ;
+    box-shadow: 0 0 10px rgb(153, 153, 153), 0 0 40px;
+    top: 5rem;
+    padding: 5px;
+    left: 30rem;
+}
+.lim:hover{
+    background-color: rgb(179, 199, 230);
+    color: black;
+    transition: .2s;
+}
+.limimg{
+    position: relative;
+    left: 62rem;
+    bottom: -0,1rem;
+}
+.talim{
+    position: relative;
+    left: 19rem;
+    font-size: 18px;
+    border-color: black;
+    border-spacing: 0ch;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.limp{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(192, 192, 192);
+    border-radius: 15px;
+    width: 28rem;
+    position:relative ;
+    box-shadow: 0 0 10px rgb(153, 153, 153), 0 0 40px;
+    top: 5rem;
+    padding: 5px;
+    left: 32rem;
+}
+.limp:hover{
+    background-color: rgb(179, 199, 230);
+    color: black;
+    transition: .2s;
+}
+.limpimg{
+    position: relative;
+    left: 60rem;
+    bottom: -0,1rem;
+}
+.talimp{
+    position: relative;
+    left: 19rem;
+    font-size: 18px;
+    border-color: black;
+    border-spacing: 0ch;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#footer{
+    color: black;
+    text-align: center;
+
+}
+
+.contfoo{
+    display: flex;
+    justify-content: flex-end;
+}
+footer{
+    width: 65.6rem;
+    position: relative;
+    height: 10vh;
+    background-color: #287034;
+}

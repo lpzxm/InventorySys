@@ -1,0 +1,76 @@
+body{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header img{
+    position: relative;
+    left: 21rem;
+}
+
+header{
+    background-color: #287034;
+}
+
+
+.btnAddEmpleado{
+    display: flex;
+    justify-content: right;
+}
+
+/* .employeecontainer{
+    position: relative;
+    left: 30%;
+    margin-top: 10vh;
+    margin-left: 5vh;
+} */
+
+.tablaemplo{
+    position: relative;
+    left: 25rem;
+    top: 2rem;
+    font-size: 18px;
+    border-color: black;
+    border-spacing: 0ch;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    box-shadow: 0 0 10px rgb(153, 153, 153), 0 0 40px;
+
+}
+
+th{
+    color: rgb(187, 179, 184);
+    padding: 2px;
+    padding: 10px;
+    background-color: rgb(85, 85, 85);
+}
+td{
+    padding: 2px;
+    padding: 10px;
+    color: white;
+    background-color: rgb(51, 51, 51);
+}
+#botoemple{
+    position: relative;
+    background-color: darkslategrey;
+    right: 30px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgb(153, 153, 153), 0 0 40px;
+}
+#emple{
+    position: relative;
+    color: black;
+    top: 10px;
+    left: 30px;
+
+}
+#botoemple:hover{
+    background-color: blanchedalmond;
+    box-shadow: 0 0 10px rgb(255, 105, 105), 0 0 40px;
+    transition: .5s;
+}
+#empleimg{
+    position: relative;
+    bottom: 20px;
+    right: 8rem;
+}

@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+*{
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url(../imagenes/R-empleado2.jpg);
+
+  height: 100vh;
+}
+
+  select {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ccdbe5;
+    margin-bottom: 18px;
+  }
+
+  input[type="date"]::-webkit-clear-button {
+    display: none;
+  }
+
+  input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+  }
+
+
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    color: #2c3e50;
+  }
+
+
+  input[type="date"] {
+    appearance: none;
+    -webkit-appearance: none;
+    color: #95a5a6;
+    font-family: "Helvetica", arial, sans-serif;
+    font-size: 18px;
+    border: 1px solid #ecf0f1;
+    background: #ecf0f1;
+    padding: 5px;
+    display: inline-block !important;
+    visibility: visible !important;
+  }
+
+  input[type="date"]{
+    color: #3e23b9;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+  }
+
+
+  #queso1{
+    border-radius: 15px;
+
+  }
+
+  .login-box {
+    width: 500px;
+    height: 800px;
+    margin-top: 200px;
+    margin-bottom: 300px;
+    position: absolute;
+    border-radius: 20px;
+    background: rgba(94, 94, 94, 0.589);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.35);
+    color: rgb(255, 255, 255);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+  }
+
+  .back{
+    position: relative;
+    float: left;
+    width: fit-content;
+}
+
+  .login-box .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 0%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+  }
+
+  .login-box h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .login-box label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+  }
+
+  .login-box input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .password{
+    position: relative;
+  }
+
+  .password span{
+    position: absolute;
+    right: 5px;
+    top: 32px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 1px 8px;
+  }
+
+  #Capa_1{
+    width: 20px;
+    height: 20px;
+    fill: white;
+  }
+
+
+  .login-box input[type="text"], .login-box input[type="password"], .login-box input[type="email"] {
+    border: none;
+    border-bottom: 1px solid rgb(196, 196, 196);
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+  }
+
+  .pass-strength {
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+  }
+
+  #papas1{
+    color: rgb(0, 0, 0);
+    background-color:  #7bdbe28a;
+  }
+  .strength-label {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  .strength-percent {
+    flex: 1;
+    height: 5px;
+    border-radius: 10px;
+    display: block;
+    background: #eee;
+  }
+
+  .strength-percent span {
+    display: block;
+    height: 100%;
+    transition: all 0.4s;
+    border-radius: 10px;
+  }
+
+
+
+  input[type="text"]::placeholder{
+      color: rgba(255, 255, 255, 0.832);
+  }
+
+  input[type="password"]::placeholder{
+    color: rgba(255, 255, 255, 0.832);
+  }
+
+  input[type="email"]::placeholder{
+    color: rgba(255, 255, 255, 0.832);
+  }
+
+  .login-box input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background:   #7bdbe28a;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+
+  .login-box input[type="submit"]:hover {
+    cursor: pointer;
+    background: #ffffff;
+    color: #000000;
+  }
+
+  .login-box a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+    display: flex;
+   justify-content: center;
+
+  }
+
+  .login-box a:hover {
+    color: #fff;
+  }
+
+  /* Boton translate */
+.trans{
+  font-size: 30px;
+  float: left;
+  cursor: pointer;
+}
+
+.spain-flag{
+  width: 10vh;
+}
+
+
+.poli{
+  display: flex;
+  justify-content: center;
+}
+
