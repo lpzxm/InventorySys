@@ -50,9 +50,13 @@ INSERT INTO `categorias` (`ID`, `Nombre`) VALUES
 --
 
 CREATE TABLE `empleados` (
-  `ID` int(11) NOT NULL,
-  `Nombre` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `id` int(11) NOT NULL,
+  `Nombre del empleado` varchar(100) NOT NULL,
+  `Credencial (PIN)` varchar(100) NOT NULL,
+  `ID del empleado` varchar(8) NOT NULL,
+  `Fecha de ingreso` varchar(100) NOT NULL,
+  `Cargo` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
