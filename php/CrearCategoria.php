@@ -1,3 +1,17 @@
+<?php
+include "conexion.php";
+
+if ($_SERVER["REQUEST_METHOD"]=="POST") {
+  $nombre = $_POST["nombre"];
+  $sql = "Insert into categorias (nombre) VALUES ('$nombre')";
+
+  mysqli_query($conn, $sql);
+  echo "<script>alert('categoria creada');  window.location.href = '../html/AdminProductos.html' </script>";
+ 
+}
+
+?>
+
 <!DOCTYPE html>
   <head>
     <meta charset="utf-8">
@@ -12,17 +26,13 @@
     <div class="login-box">
       <img src="../imagenes/hola.png" class="avatar" alt="Avatar Image">
       <h1 id="titleA">Ingresa aqui</h1>
-      <form action="inicio de sesion.php" method="post">
+      <form method="post">
 
-        <label for="username" id="U1">ID: </label>
+        <label for="password" id="P2">Nombre de categoria:</label>
 
-        <input type="text" name="usuario" placeholder="Ingrese el ID correspondiente ">
+        <input type="text" name="nombre" placeholder="Ingresa el nombre de la categoria">
 
-        <label for="password" id="P2">Pin:</label>
-
-        <input type="password" name="contraseña" placeholder="Ingresa tu Pin">
-
-        <input type="submit" name="iniciar" value="Iniciar sesión" id="V1">
+        <input type="submit" name="iniciar" value="Crear categoria" id="V1">
         
       </form>
     </div>
