@@ -24,7 +24,7 @@ form {
 	padding: 20px;
 	margin: 0 auto;
 	max-width: 500px;
-
+	
 }
 .report{
 	width: 100%;
@@ -66,4 +66,18 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
 	background-color: #267664;
+}
+.ok{
+	text-align: center;
+	width: 100%;
+	padding: 12px;
+	background-color: green;
+	color: #fff;
+}
+.bad{
+	text-align: center;
+	width: 100%;
+	padding: 12px;
+	background-color: red;
+	color: #fff;
 }

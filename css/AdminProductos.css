@@ -15,6 +15,11 @@ header img{
 header{
     background-color: #287034;
 }
+#cont{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10vh;
+}
 
 .btnAdd{
     display: flex;
@@ -44,6 +49,8 @@ header{
     background-color: rgb(186, 50, 50);
     transition: all ease-in-out .3s;
 }
+
+
 .car{
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(192, 192, 192);

@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"]=="POST") {
   $sql = "Insert into categorias (nombre) VALUES ('$nombre')";
 
   mysqli_query($conn, $sql);
-  echo "<script>alert('categoria creada');  window.location.href = '../html/AdminProductos.html' </script>";
+  echo "<script>alert('categoria creada');  window.location.href = '../php/adminProductos.php' </script>";
  
 }
 
@@ -19,13 +19,13 @@ if ($_SERVER["REQUEST_METHOD"]=="POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/loginstyle.css">
     <link rel="shortcut icon" href="../imagenes/hola.png" type="image/x-icon">
-    <title>Inicia Sesion</title>
+    <title>Crear categoria nueva - Admin</title>
   </head>
   <body>
 
     <div class="login-box">
       <img src="../imagenes/hola.png" class="avatar" alt="Avatar Image">
-      <h1 id="titleA">Ingresa aqui</h1>
+      <h1 id="titleA">Crea una nueva categoria!</h1>
       <form method="post">
 
         <label for="password" id="P2">Nombre de categoria:</label>

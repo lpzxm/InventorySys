@@ -61,6 +61,7 @@ CREATE TABLE `empleados` (
 -- --------------------------------------------------------
 
 --
+
 -- Estructura de tabla para la tabla `productos`
 --
 
