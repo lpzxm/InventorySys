@@ -157,3 +157,11 @@ footer{
     background-color: #287034;
 
 }
+input{
+    font-size: 17.2px;
+    padding: 5px;
+    background-color: rgb(158, 158, 158);
+}
+input:hover{
+    background-color: rgb(120, 151, 252);
+}
