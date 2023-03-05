@@ -104,7 +104,8 @@ header{
     bottom: 1rem;
 }
 table{
-    margin-left: 80px;
+    display: flex;
+    justify-content: end;
     font-size: 18px;
     border-color: rgb(255, 255, 255);
     box-shadow: 0 0 10px plum, 0 0 40px;
