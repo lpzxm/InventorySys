@@ -10,7 +10,7 @@
     <link rel="icon" href="../Imagenes/hola.png">
     <title>Index empleado</title>
 </head>
-<body background="../Imagenes/Imagenes-Empleado/fondo.avif">
+<body  onload="mueveReloj()" background="../Imagenes/Imagenes-Empleado/fondo.avif">
     <header>
         <img src="../Imagenes/Imagenes-Empleado/holax2.png" alt="">
         <hr>
@@ -33,7 +33,9 @@
             <br>
             <hr>
             <br>
-            <li><a href="#">Hora restante:</a></li>
+            <li><a href="#">Hora:</a><form name="form_reloj">
+                <input type="text" name="reloj" size="10" onfocus="window.document.form_reloj.reloj.blur()">
+                </form></li>
     </div>
     </section>
 <!--Cuerpo del trabajo-->
@@ -323,6 +325,32 @@
                     <p id="footer">Derechos reservado (2023)</p>
                 </footer>            
             </div>
-
+                <!-- Reloj -->
+    <script language="JavaScript">
+        function mueveReloj(){
+            momentoActual = new Date()
+            hora = momentoActual.getHours()
+            minuto = momentoActual.getMinutes()
+            segundo = momentoActual.getSeconds()
+        
+            str_segundo = new String (segundo)
+            if (str_segundo.length == 1)
+               segundo = "0" + segundo
+        
+            str_minuto = new String (minuto)
+            if (str_minuto.length == 1)
+               minuto = "0" + minuto
+        
+            str_hora = new String (hora)
+            if (str_hora.length == 1)
+               hora = "0" + hora
+        
+            horaImprimible = hora + " : " + minuto + " : " + segundo + "  " + momentoActual;
+        
+            document.form_reloj.reloj.value = horaImprimible
+        
+            setTimeout("mueveReloj()",1000)
+        }
+        </script>
 </body>
 </html>
