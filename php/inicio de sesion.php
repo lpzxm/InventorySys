@@ -31,7 +31,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/loginstyle.css">
+    <link rel="stylesheet" href="../css/loginstyle.css">
     <link rel="shortcut icon" href="../imagenes/hola.png" type="image/x-icon">
     <title>Inicia Sesion</title>
   </head>
@@ -51,10 +51,12 @@
         <input type="password" name="password" placeholder="Ingresa tu Pin" required>
 
         <input type="submit" name="iniciar" value="Iniciar sesión" id="V1">
+
+        
         
       </form>
     </div>
-    
+    <a href="../php/Inicio de sesion de administrador.php"> <button class="pizza12">Inicio de sesion, Administrador</button></a>
   </body>
  
 </html>

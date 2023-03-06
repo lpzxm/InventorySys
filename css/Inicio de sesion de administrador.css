@@ -7,8 +7,9 @@
 body {
   margin: 0;
   padding: 0;
-  background: url(../imagenes/InicioSesion.jpg);
-  height: 100vh;
+  background-image: url(../Imagenes/R\ admii.jpg);
+  background-repeat: no-repeat;
+ background-size: cover;
 }
 
 .back {
@@ -17,12 +18,11 @@ body {
   width: fit-content;
 }
 
-
-.pizza12{
-  border-radius: 20%;
-  border: rgb(253, 3, 3);
-  background-color: rgba(240, 128, 128, 0.411);
+.hm112{
+  border-radius: 20px;
+  background-color: lightcoral;
 }
+
 .login-box {
   width: 320px;
   height: 420px;
