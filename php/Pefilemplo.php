@@ -1,7 +1,62 @@
 <?php
 include "conexion.php";
-$empleados = mysqli_query($conn, "Select * from empleados");
+
+session_start();
+function retonarName()
+{
+    if (isset($_SESSION["nombre"])) {
+        return $_SESSION["nombre"];
+    }
+}
+
+function retonarDUI()
+{
+    if (isset($_SESSION["dui"])) {
+        return $_SESSION["dui"];
+    }
+}
+
+function retonarPIN()
+{
+    if (isset($_SESSION["pin"])) {
+        return $_SESSION["pin"];
+    }
+}
+
+function retonarID()
+{
+    if (isset($_SESSION["id"])) {
+        return $_SESSION["id"];
+    }
+}
+
+function retonarFecha()
+{
+    if (isset($_SESSION["fecha"])) {
+        return $_SESSION["fecha"];
+    }
+}
+
+function retonarCargo()
+{
+    if (isset($_SESSION["cargo"])) {
+        return $_SESSION["cargo"];
+    }
+}
+
+function retonarEntrada(){
+    if (isset($_SESSION["entrada"])) {
+        return $_SESSION["entrada"];
+    }
+}
+
+function retonarSalida(){
+    if (isset($_SESSION["salida"])) {
+        return $_SESSION["salida"];
+    }
+}
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -48,7 +103,9 @@ $empleados = mysqli_query($conn, "Select * from empleados");
     <br>
     <h1 id="infop">Información personal:</h1>
     <br>
-    <h4>Nombre del empleado:</h4>
+    <h4>Nombre del empleado:  <?= retonarName(); ?></h4>
+    <br>
+    <h4>DUI: <?= retonarDUI(); ?></h4>
     <br>
     <h4>PIN: <?= retonarPIN(); ?></h4>
     <br>
@@ -64,36 +121,15 @@ $empleados = mysqli_query($conn, "Select * from empleados");
     <br>
     <table border="1">
         <tr>
-            <th>Lunes</th>
-               <th>Martes</th>
-                  <th>Miercoles</th>
-                    <th>Jueves</th>
-                      
+            <th>Hora de entrada</th>
+               <th>Hora de salida</th>
 
         </tr>
         <tr>
-            <td>Vespertino <br>
-            1:00pm - 5:59pm</td>
-            <td>Matutino <br>
-                6:00am - 12:59pm</td>
-                <td>Nocturno <br>
-                    6:0opm - 9:59pm</td>
-                    <td>Vespertino <br>
-                        1:00pm - 5:59pm</td>
+            <td><?= retonarEntrada(); ?></td>
+            <td><?= retonarSalida(); ?><br>
 
-        </tr>
-        <th>Viernes</th>
-          <th>Sábado</th>
-            <th colspan="2">Domingo</th>
 
-        <tr>                      
-              <td>Nocturno <br>
-            6:0opm - 9:59pm</td>
-            <td>Matutino <br>
-                6:00am - 12:59pm</td>
-                <td colspan="2">Matutino <br>
-                    6:00am - 12:59pm</td>
-                
         </tr>
     </table>
     <br>
