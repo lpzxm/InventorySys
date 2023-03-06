@@ -1,8 +1,13 @@
 <?php
 include "conexion.php";
 $empleados = mysqli_query($conn, "Select * from empleados");
+function retonarName()
+{
+    if (isset($_SESSION["user"])) {
+        return $_SESSION["user"];
+    }
+}
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -49,7 +54,7 @@ $empleados = mysqli_query($conn, "Select * from empleados");
     <br>
     <h1 id="infop">Información personal:</h1>
     <br>
-    <h4>Nombre del empleado:</h4>
+    <h4>Nombre del empleado:<?php $result["Nombre del empleado"]?> </h4> 
     <br>
     <h4>PIN:</h4>
     <br>
@@ -65,36 +70,14 @@ $empleados = mysqli_query($conn, "Select * from empleados");
     <br>
     <table border="1">
         <tr>
-            <th>Lunes</th>
-               <th>Martes</th>
-                  <th>Miercoles</th>
-                    <th>Jueves</th>
-                      
+            <th>Hora entrada:</th>
+               <th>Hora salida:</th>
 
         </tr>
         <tr>
-            <td>Vespertino <br>
-            1:00pm - 5:59pm</td>
-            <td>Matutino <br>
-                6:00am - 12:59pm</td>
-                <td>Nocturno <br>
-                    6:0opm - 9:59pm</td>
-                    <td>Vespertino <br>
-                        1:00pm - 5:59pm</td>
+            <td></td>
+            <td></td>
 
-        </tr>
-        <th>Viernes</th>
-          <th>Sábado</th>
-            <th colspan="2">Domingo</th>
-
-        <tr>                      
-              <td>Nocturno <br>
-            6:0opm - 9:59pm</td>
-            <td>Matutino <br>
-                6:00am - 12:59pm</td>
-                <td colspan="2">Matutino <br>
-                    6:00am - 12:59pm</td>
-                
         </tr>
     </table>
     <br>
