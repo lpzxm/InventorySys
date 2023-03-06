@@ -79,7 +79,7 @@ while ($categoria = mysqli_fetch_assoc($categoriaResult)) {
 
     ?>
         <div id="cont">
-            <h1 class="">Categoria: <?= $cate["Nombre"] ?></h1>
+            <h1 class="cate">Categoria: <?= $cate["Nombre"] ?></h1>
             <!--Carnes-->
             <table class="" border="0">
                 <tr class="first">
