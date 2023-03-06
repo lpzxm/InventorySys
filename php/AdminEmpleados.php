@@ -81,7 +81,9 @@ $empleados = "Select * from empleados";
             <th>Nombre completo</th>
             <th>DUI</th>
             <th>ID</th>
+            <th>PIN</th>
             <th>Fecha de registro</th>
+            <th>Cargo</th>
             <th>Eliminar empleado</th>
             </tr>
             <?php
@@ -91,12 +93,12 @@ $empleados = "Select * from empleados";
             ?>
             <tr>
                 <td><?php echo $row["Nombre del empleado"]?></td>
-                <td><?php echo $row["Credencial (PIN)"]?></td>
+                <td><?php echo $row["DUI"]?></td>
                 <td><?php echo $row["ID del empleado"]?></td>
+                <td><?php echo $row["Credencial (PIN)"]?></td>
                 <td><?php echo $row["Fecha de ingreso"]?></td>
                 <td><?php echo $row["Cargo"]?></td>
                 <td><a href="../php/eliminarEmpleado.php?ID=<?php echo $row["ID"];?>"><button><img src="../Imagenes/Eliminar.webp" width="20px"id="myBtn"></button></a></td>
-    
             </tr>
             <?php }?>
         </table>
