@@ -1,12 +1,6 @@
 <?php
-
-if ($variableSesion = true) {
-  header("location: InicioSesion.php");
-}
-
+ include("conexion.php");
 ?>
-
-
 <!DOCTYPE html>
   <head>
     <meta charset="utf-8">
@@ -14,7 +8,6 @@ if ($variableSesion = true) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/loginstyle.css">
     <link rel="shortcut icon" href="../imagenes/hola.png" type="image/x-icon">
-    <link rel="icon" href="../Imagenes/hola.png">
     <title>Inicia Sesion</title>
   </head>
   <body>
@@ -22,15 +15,15 @@ if ($variableSesion = true) {
     <div class="login-box">
       <img src="../imagenes/hola.png" class="avatar" alt="Avatar Image">
       <h1 id="titleA">Ingresa aqui</h1>
-      <form action="inicio de sesion.php" method="post">
+      <form action="Login.php" method="POST">
 
-        <label for="username" id="U1">ID: </label>
+        <label for="usuario" id="U1">ID: </label>
 
         <input type="text" name="usuario" placeholder="Ingrese el ID correspondiente ">
 
         <label for="password" id="P2">Pin:</label>
 
-        <input type="password" name="contraseña" placeholder="Ingresa tu Pin">
+        <input type="password" name="password" placeholder="Ingresa tu Pin">
 
         <input type="submit" name="iniciar" value="Iniciar sesión" id="V1">
         

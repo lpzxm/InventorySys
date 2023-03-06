@@ -104,7 +104,7 @@ $empleados = "Select * from empleados";
         </table>
     </div>
     
-    <!-- Reloj
+    <!-- Reloj -->
     <script language="JavaScript">
         function mueveReloj(){
             momentoActual = new Date()
@@ -129,7 +129,7 @@ $empleados = "Select * from empleados";
             document.form_reloj.reloj.value = horaImprimible
         
             setTimeout("mueveReloj()",1000)
-        } -->
+        }
 
         </script>
 </body>
