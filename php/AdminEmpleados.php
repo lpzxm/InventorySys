@@ -1,3 +1,10 @@
+<?php
+include "conexion.php";
+$empleados = "Select * from empleados";
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,7 +33,7 @@
             <li> <a href="../php/table.php">Reporte</a></li>
             <li><a href="../php/adminProductos.php">Productos</a></li>
             <br>
-            <a href="../php/InicioSesion.php"><input id="cerrar" type="button" value="Cerrar sesión"/></a>
+            <a href="../php/logout.php"><input id="cerrar" type="button" value="Cerrar sesión"/></a>
             <br>
             <hr>
             <br>
@@ -43,7 +50,7 @@
         </div>
         
     <div class="btnAddEmpleado">
-      <button id="botoemple"> <a id="emple" href="../html/registro de empleado.html"> Agregar empleado <img id="empleimg" src="../Imagenes/Imagenes-Empleado/empleado-contratar.png" width="50px" alt=""></a></button>
+      <button id="botoemple"> <a id="emple" href="../php/Registro empleado.php"> Agregar empleado <img id="empleimg" src="../Imagenes/Imagenes-Empleado/empleado-contratar.png" width="50px" alt=""></a></button>
     </div>
 
     <!-- modal -->
@@ -77,46 +84,25 @@
             <th>Fecha de registro</th>
             <th>Eliminar empleado</th>
             </tr>
+            <?php
+              $result = mysqli_query($conn, $empleados);
+
+              while ($row = mysqli_fetch_assoc($result)){
+            ?>
             <tr>
-                <td>Lorem, ipsum.</td>
-                <td>Lorem, ipsum.</td>
-                <td>Lorem, ipsum.</td>
-                <td>Lorem, ipsum.</td>
-                <td><button><img src="../Imagenes/Eliminar.webp" width="20px"id="myBtn" onclick="eliminarEmpleadoModal()"></button></td>
+                <td><?php echo $row["Nombre del empleado"]?></td>
+                <td><?php echo $row["Credencial (PIN)"]?></td>
+                <td><?php echo $row["ID del empleado"]?></td>
+                <td><?php echo $row["Fecha de ingreso"]?></td>
+                <td><?php echo $row["Cargo"]?></td>
+                <td><a href="../php/eliminarEmpleado.php?ID=<?php echo $row["ID"];?>"><button><img src="../Imagenes/Eliminar.webp" width="20px"id="myBtn"></button></a></td>
     
             </tr>
-            <tr>
-                <td>Lorem, ipsum.</td>
-                <td>3Lorem, ipsum.</td>
-                <td>Lorem, ipsum.</td>
-                <td>Lorem, ipsum.</td>
-                <td><button><img src="../Imagenes/Eliminar.webp" width="20px"id="myBtn" onclick="eliminarEmpleadoModal()"></button></td>
-            </tr>
-            <tr>
-                <td>Lorem, ipsum.</td>
-                <td>4Lorem, ipsum.</td>
-                <td>Lorem, ipsum.</td>
-                <td>Lorem, ipsum.</td>
-                <td><button><img src="../Imagenes/Eliminar.webp" width="20px"id="myBtn" onclick="eliminarEmpleadoModal()"></button></td>
-            </tr>
-            <tr>
-                <td>SLorem, ipsum.</td>
-                <td>2Lorem, ipsum.</td>
-                <td>$Lorem, ipsum.</td>
-                <td>DLorem, ipsum.</td>
-                <td><button><img src="../Imagenes/Eliminar.webp" width="20px"id="myBtn" onclick="eliminarEmpleadoModal()"></button></td>
-            </tr>
-            <tr>
-                <td>Lorem, ipsum.</td>
-                <td>Lorem, ipsum.</td>
-                <td>Lorem, ipsum.</td>
-                <td>Lorem, ipsum.</td>
-                <td><button><img src="../Imagenes/Eliminar.webp" width="20px"id="myBtn" onclick="eliminarEmpleadoModal()"></button></td>
-            </tr>
+            <?php }?>
         </table>
     </div>
     
-    <!-- Reloj -->
+    <!-- Reloj
     <script language="JavaScript">
         function mueveReloj(){
             momentoActual = new Date()
@@ -141,28 +127,8 @@
             document.form_reloj.reloj.value = horaImprimible
         
             setTimeout("mueveReloj()",1000)
-        }
-        function eliminarEmpleadoModal(){
-          var modal = document.getElementById("myModal");
-          var btn = document.getElementById("myBtn");
-          var span = document.getElementsByClassName("close")[0];
-    
-          btn.onclick = function() {
-            modal.style.display = "block";
-            console.log("hola")
-          }
-    
-          span.onclick = function() {
-            modal.style.display = "none";
-          }
+        } -->
 
-          window.onclick = function(event) {
-            if (event.target == modal) {
-              modal.style.display = "none";
-            }
-          }     
-        }
-    
         </script>
 </body>
 </html>

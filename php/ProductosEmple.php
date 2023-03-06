@@ -36,7 +36,7 @@ while ($categoria = mysqli_fetch_assoc($categoriaResult)) {
                 <li> <a href="../php/">Perfil</li></a>
                 <li> <a href="../php/ProductosEmple.php">Productos</a></li>
                 <br>
-                <a href="../html/InicioSesion.html"><input id="cerrar" type="button" value="Cerrar sesión" /></a>
+                <a href="../php/logout.php"><input id="cerrar" type="button" value="Cerrar sesión" /></a>
                 <br>
                 <hr>
                 <br>
@@ -110,7 +110,6 @@ while ($categoria = mysqli_fetch_assoc($categoriaResult)) {
                 </tr>
                 <?php } ?>
                 <?php if (empty($misProductos)) {
-                    # code...
                 
                 ?>
                 <h2>No hay producto</h2>
