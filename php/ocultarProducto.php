@@ -13,5 +13,5 @@ else{
 }
 $sql = "Update productos set visible = $mostrar where IDproducto = $IDproducto";
   mysqli_query($conn, $sql);
-  echo "<script>alert('categoria creada');  window.location.href = '../php/AdminProductos.php' </script>";
+  echo "<script>alert('producto ocultado');  window.location.href = '../php/AdminProductos.php' </script>";
 ?>
