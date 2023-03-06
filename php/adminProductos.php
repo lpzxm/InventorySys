@@ -37,7 +37,7 @@ while ($categoria = mysqli_fetch_assoc($categoriaResult)) {
                 <li> <a href="../php/table.php">Reporte</a></li>
                 <li><a href="../php/adminProductos.php">Productos</a></li>
                 <br>
-                <a href="../html/InicioSesion.html"><input id="cerrar" type="button" value="Cerrar sesión" /></a>
+                <a href="../php/logout.php"><input id="cerrar" type="button" value="Cerrar sesión" /></a>
                 <br>
                 <hr>
                 <br>

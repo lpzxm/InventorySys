@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 05-03-2023 a las 04:36:21
--- Versión del servidor: 10.4.25-MariaDB
--- Versión de PHP: 8.1.10
+-- Tiempo de generación: 05-03-2023 a las 21:56:41
+-- Versión del servidor: 10.4.27-MariaDB
+-- Versión de PHP: 8.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -31,7 +31,7 @@ CREATE TABLE `administrador` (
   `ID` int(11) NOT NULL,
   `id_usuario` int(11) NOT NULL,
   `id_admin` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -42,7 +42,7 @@ CREATE TABLE `administrador` (
 CREATE TABLE `categorias` (
   `ID` int(11) NOT NULL,
   `Nombre` varchar(200) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `categorias`
@@ -50,7 +50,8 @@ CREATE TABLE `categorias` (
 
 INSERT INTO `categorias` (`ID`, `Nombre`) VALUES
 (6, 'Limpieza'),
-(7, 'Carnes');
+(7, 'Carnes'),
+(8, '');
 
 -- --------------------------------------------------------
 
@@ -65,7 +66,18 @@ CREATE TABLE `empleados` (
   `ID del empleado` varchar(8) NOT NULL,
   `Fecha de ingreso` varchar(100) NOT NULL,
   `Cargo` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `empleados`
+--
+
+INSERT INTO `empleados` (`ID`, `Nombre del empleado`, `Credencial (PIN)`, `ID del empleado`, `Fecha de ingreso`, `Cargo`) VALUES
+(1, 'Mario', 'Mar12', '1234', '2023-03-05', 'Bodegero'),
+(2, 'Sara', 'Sar23', '6789', '2023-03-15', 'Caja'),
+(3, 'Mario', 'Mar12', '1234', '2023-03-04', 'Bodegero'),
+(4, 'Mario', 'Mar12', '1234', '2023-03-05', 'Bodegero'),
+(5, 'Mario', 'Mar12', '6789', '2023-03-12', 'Bodegero');
 
 -- --------------------------------------------------------
 
@@ -78,7 +90,7 @@ CREATE TABLE `gerente` (
   `nombre` varchar(100) NOT NULL,
   `DUI` int(200) NOT NULL,
   `telefono` int(200) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -95,7 +107,7 @@ CREATE TABLE `productos` (
   `Precio` float NOT NULL,
   `IDcategoria` int(11) NOT NULL,
   `visible` tinyint(1) NOT NULL DEFAULT 1
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `productos`
@@ -116,7 +128,7 @@ CREATE TABLE `reportes` (
   `ID` int(11) NOT NULL,
   `Nproduct` varchar(200) NOT NULL,
   `Descripcion` varchar(500) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Índices para tablas volcadas
@@ -173,13 +185,13 @@ ALTER TABLE `administrador`
 -- AUTO_INCREMENT de la tabla `categorias`
 --
 ALTER TABLE `categorias`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de la tabla `empleados`
 --
 ALTER TABLE `empleados`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de la tabla `gerente`
@@ -197,7 +209,7 @@ ALTER TABLE `productos`
 -- AUTO_INCREMENT de la tabla `reportes`
 --
 ALTER TABLE `reportes`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Restricciones para tablas volcadas
