@@ -222,6 +222,13 @@ td{
     text-align: center;
     font-family:Arial, Helvetica, sans-serif;
 }
+.cate{
+    position: relative;
+    bottom: 40px;
+    left: 28rem;
+    color: black
+
+}
 #footer{
     color: black;
     text-align: center;
