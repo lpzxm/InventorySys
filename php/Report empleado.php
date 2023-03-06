@@ -15,7 +15,7 @@
             <label for="nombre">Nombre del producto:</label>
             <input type="text" id="nombre" name="nombre" required><br><br>
             <label for="descripcion">Descripción:</label>
-            <textarea id="descripcion" name="descripcion"></textarea required><br><br>
+            <textarea id="descripcion" name="descripcion" required></textarea ><br><br>
             <input type="submit" name="enviar">
         </form>
         <?php

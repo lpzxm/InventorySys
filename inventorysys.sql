@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 06-03-2023 a las 04:30:52
+-- Tiempo de generación: 06-03-2023 a las 08:07:48
 -- Versión del servidor: 10.4.25-MariaDB
 -- Versión de PHP: 8.1.10
 
@@ -60,24 +60,27 @@ INSERT INTO `categorias` (`ID`, `Nombre`) VALUES
 
 CREATE TABLE `empleados` (
   `ID` int(11) NOT NULL,
-  `Nombre del empleado` varchar(100) NOT NULL,
+  `Nombre` varchar(100) NOT NULL,
   `DUI` int(9) NOT NULL,
-  `Credencial (PIN)` varchar(100) NOT NULL,
-  `ID del empleado` varchar(8) NOT NULL,
-  `Fecha de ingreso` varchar(100) NOT NULL,
-  `Cargo` varchar(100) NOT NULL
+  `PIN` varchar(100) NOT NULL,
+  `IDemple` varchar(8) NOT NULL,
+  `Fechaingre` varchar(100) NOT NULL,
+  `Cargo` varchar(100) NOT NULL,
+  `turnoentrada` time(6) NOT NULL,
+  `turnosalida` time(6) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `empleados`
 --
 
-INSERT INTO `empleados` (`ID`, `Nombre del empleado`, `DUI`, `Credencial (PIN)`, `ID del empleado`, `Fecha de ingreso`, `Cargo`) VALUES
-(2, 'Sara', 0, 'Sar23', '6789', '2023-03-15', 'Caja'),
-(3, 'Mario', 0, 'Mar12', '1234', '2023-03-04', 'Bodegero'),
-(4, 'Mario', 0, 'Mar12', '1234', '2023-03-05', 'Bodegero'),
-(5, 'Mario', 0, 'Mar12', '6789', '2023-03-12', 'Bodegero'),
-(6, 'Juan', 0, '3456', '2039129', '2020-06-05', 'Supervisor');
+INSERT INTO `empleados` (`ID`, `Nombre`, `DUI`, `PIN`, `IDemple`, `Fechaingre`, `Cargo`, `turnoentrada`, `turnosalida`) VALUES
+(2, 'Sara', 0, 'Sar23', '6789', '2023-03-15', 'Caja', '00:00:00.000000', '00:00:00.000000'),
+(3, 'Mario', 0, 'Mar12', '1234', '2023-03-04', 'Bodegero', '00:00:00.000000', '00:00:00.000000'),
+(4, 'Mario', 0, 'Mar12', '1234', '2023-03-05', 'Bodegero', '00:00:00.000000', '00:00:00.000000'),
+(5, 'Mario', 0, 'Mar12', '6789', '2023-03-12', 'Bodegero', '00:00:00.000000', '00:00:00.000000'),
+(7, 'Marcos', 21321312, '1232', '83453', '2013-06-11', 'Mozo', '00:00:00.000000', '00:00:00.000000'),
+(8, 'Julio', 12332432, '6587', '98067', '1998-06-18', 'Jefe', '04:13:02.000000', '00:00:13.000000');
 
 -- --------------------------------------------------------
 
@@ -114,9 +117,9 @@ CREATE TABLE `productos` (
 --
 
 INSERT INTO `productos` (`IDproducto`, `Nombre`, `Descripcion`, `proveedor`, `Cantidad`, `Precio`, `IDcategoria`, `visible`) VALUES
-(4, 'Asistin', 'Asistin Lavanda Bolsa 1lt', 'Asistin', 32, 0.99, 6, 0),
+(4, 'Asistin', 'Asistin Lavanda Bolsa 1lt', 'Asistin', 20, 0.99, 7, 0),
 (5, 'Escoba', 'Escoba larga color rojo', 'IML', 30, 1, 6, 1),
-(6, 'Carne molida', 'Carne molida fud', 'FUD', 100, 1.2, 7, 1);
+(6, 'Carne molida', 'Carne molida fud', 'FUD', 71, 1.2, 7, 1);
 
 -- --------------------------------------------------------
 
@@ -191,7 +194,7 @@ ALTER TABLE `categorias`
 -- AUTO_INCREMENT de la tabla `empleados`
 --
 ALTER TABLE `empleados`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de la tabla `gerente`

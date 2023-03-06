@@ -68,6 +68,7 @@ p{
     border-radius: 20px;
     height: 45px;
     width: 10rem;
+    z-index: 1000;
 }
 #cerrar:hover{
     background-color: green;

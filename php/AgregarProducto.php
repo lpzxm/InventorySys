@@ -35,23 +35,23 @@ if ($_SERVER["REQUEST_METHOD"]=="POST") {
 
         <label for="password" id="P2">Nombre de producto:</label>
 
-        <input type="text" name="nombre" placeholder="Ingresa el nombre del producto">
+        <input type="text" name="nombre" placeholder="Ingresa el nombre del producto" required>
 
         <label for="password" id="P2">Descripción:</label>
-        <input type="text" name="Descripcion" placeholder="Descripción">
+        <input type="text" name="Descripcion" placeholder="Descripción" required>
 
         <label for="">Proveedor: </label>
-        <input type="text" name="proveedor" placeholder="Nombre de empresa/proveedor">
+        <input type="text" name="proveedor" placeholder="Nombre de empresa/proveedor" required>
 
         <label for="password" id="P2">Cantidad:</label>
-        <input type="number" name="Cantidad" min="1" max="100" placeholder="1 a 100">
+        <input type="number" name="Cantidad" min="1" max="100" placeholder="1 a 100" required>
 
         <label for="password" id="P2">Precio:</label>
-        <input type="number" name="Precio" min="0.01" max="100" step="0.01">
+        <input type="number" name="Precio" min="0.01" max="100" step="0.01" required>
 
         <label for="">Selecciona la categoria a la cual pertenece: </label>
 
-        <select name="categoria" id="">
+        <select name="categoria" id="" required>
             <?php
                 foreach ($productos as $categoria) {
                     ?>

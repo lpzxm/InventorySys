@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"]=="POST") {
 
         <label for="password" id="P2">Nombre de categoria:</label>
 
-        <input type="text" name="nombre" placeholder="Ingresa el nombre de la categoria">
+        <input type="text" name="nombre" placeholder="Ingresa el nombre de la categoria" required>
 
         <input type="submit" name="iniciar" value="Crear categoria" id="V1">
         

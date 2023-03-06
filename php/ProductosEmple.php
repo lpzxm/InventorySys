@@ -33,7 +33,7 @@ while ($categoria = mysqli_fetch_assoc($categoriaResult)) {
             <img src="../Imagenes/Imagenes-Empleado/hola.png" alt="logo" width="100">
             <br>
             <ul>
-                <li> <a href="../php/">Perfil</li></a>
+                <li> <a href="../php/Pefilemplo.php">Perfil</li></a>
                 <li> <a href="../php/ProductosEmple.php">Productos</a></li>
                 <br>
                 <a href="../php/logout.php"><input id="cerrar" type="button" value="Cerrar sesión" /></a>

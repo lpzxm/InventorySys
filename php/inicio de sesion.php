@@ -1,5 +1,30 @@
 <?php
  include("conexion.php");
+ session_start();
+  if (!empty($_POST["iniciar"])) {
+    if (!empty($_POST["usuario"]) and !empty($_POST["password"])) {
+        $usuario=$_POST["usuario"];
+        $password=$_POST["password"];
+        $sql=$conn->query("Select * from empleados where `IDemple`= '$usuario' and `PIN` = '$password'");
+        if ($datos=$sql->fetch_object()) {
+                $_SESSION["id"]=$datos->ID;
+                $_SESSION["nombre"]=$datos->Nombre;
+                $_SESSION["dui"]=$datos->DUI;
+                $_SESSION["pin"]=$datos->PIN;
+                $_SESSION["id"]=$datos->IDemple;
+                $_SESSION["fecha"]=$datos->Fechaingre;
+                $_SESSION["cargo"]=$datos->Cargo;
+                $_SESSION["entrada"]=$datos->turnoentrada;
+                $_SESSION["salida"]=$datos->turnosalida;
+                
+                header("location: ../php/ProductosEmple.php");
+
+        }
+    }
+    else{
+        echo "Campos vacios";
+    }
+}
 ?>
 <!DOCTYPE html>
   <head>
@@ -15,15 +40,15 @@
     <div class="login-box">
       <img src="../imagenes/hola.png" class="avatar" alt="Avatar Image">
       <h1 id="titleA">Ingresa aqui</h1>
-      <form action="Login.php" method="POST">
+      <form method="POST">
 
         <label for="usuario" id="U1">ID: </label>
 
-        <input type="text" name="usuario" placeholder="Ingrese el ID correspondiente ">
+        <input type="text" name="usuario" placeholder="Ingrese el ID correspondiente " required>
 
         <label for="password" id="P2">Pin:</label>
 
-        <input type="password" name="password" placeholder="Ingresa tu Pin">
+        <input type="password" name="password" placeholder="Ingresa tu Pin" required>
 
         <input type="submit" name="iniciar" value="Iniciar sesión" id="V1">
         

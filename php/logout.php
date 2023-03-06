@@ -3,7 +3,7 @@ session_start();
 
 session_unset();
 
-header("location: InicioSesion.php");
+header("location: inicio de sesion.php");
 
 exit;
 

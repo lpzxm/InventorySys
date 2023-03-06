@@ -84,6 +84,8 @@ $empleados = "Select * from empleados";
             <th>PIN</th>
             <th>Fecha de registro</th>
             <th>Cargo</th>
+            <th>Entrada</th>
+            <th>Salida</th>
             <th>Eliminar empleado</th>
             </tr>
             <?php
@@ -92,12 +94,14 @@ $empleados = "Select * from empleados";
               while ($row = mysqli_fetch_assoc($result)){
             ?>
             <tr>
-                <td><?php echo $row["Nombre del empleado"]?></td>
+                <td><?php echo $row["Nombre"]?></td>
                 <td><?php echo $row["DUI"]?></td>
-                <td><?php echo $row["ID del empleado"]?></td>
-                <td><?php echo $row["Credencial (PIN)"]?></td>
-                <td><?php echo $row["Fecha de ingreso"]?></td>
+                <td><?php echo $row["IDemple"]?></td>
+                <td><?php echo $row["PIN"]?></td>
+                <td><?php echo $row["Fechaingre"]?></td>
                 <td><?php echo $row["Cargo"]?></td>
+                <td><?php echo $row["turnoentrada"]?></td>
+                <td><?php echo $row["turnosalida"]?></td>
                 <td><a href="../php/eliminarEmpleado.php?ID=<?php echo $row["ID"];?>"><button><img src="../Imagenes/Eliminar.webp" width="20px"id="myBtn"></button></a></td>
             </tr>
             <?php }?>
